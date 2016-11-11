@@ -1,0 +1,334 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    position: relative;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+header{
+    position: relative;
+    height: 72px;
+    background-color: #fffabe;
+    background-image: url(assets/images/logo.png);
+    background-repeat: no-repeat;
+    background-position: 55px 22px;
+}
+nav ul{
+    position: absolute;
+    list-style-type: none;
+    right: 45px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+nav li{
+    float: left;
+    margin-right: 55px;
+}
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: #515151;
+}
+nav a:hover{
+    color: #d42551;
+}
+/*Large image under header*/
+.welcome_img{
+    height: 400px;
+    padding-bottom: 6%;
+}
+#about img{
+    float: left;
+    padding: 70px 55px 110px 55px;
+}
+/*font color for majority excluding footer and header*/
+main{
+    color: #6a6969;
+}
+h2{/*Non-descriptive paragraphs*/
+    font-size: 20px;
+    margin: 3% 0;
+    font-weight: normal;
+}
+/*non-header font*/
+#about p, .days, #our_macarons, #gifts, #contact{
+    font-size: 14px;
+    color: #6a6969;
+}
+/*format for <p>*/
+#about, #our_macarons, #gifts, #contact{
+    text-align: justify;
+    line-height:23px;
+}
+/*center flavor boxes*/
+.daily_flavor{
+    position: relative;
+    text-align: justify;
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+.daily_flavor > div{
+    position: relative;
+    display: inline-block;
+    width: 126px;
+    height: 140px;
+    background-color: #fffabe;
+}
+.daily_flavor:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+}
+.daily_flavor p{
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+p.days{
+    padding-top: 10px;
+    padding-bottom: 5px
+}
+.daily_flavor, footer{
+    font-size: 12px;
+}.daily_flavor img{
+    position: absolute;
+    right: 10px;
+ }
+/*top macaron*/
+img.top{
+    top:71px;
+}
+/*bottom macaron*/
+img.bottom{
+    bottom: 7px;
+}
+/*colored box for daily flavors*/
+#monday, #wednesday, #friday, #sunday, .not_special{
+    position: relative;
+    width: 126px;
+    height: 33px;
+    bottom: 12px;
+}
+#monday p, #wednesday p, #friday p, #sunday p, .not_special p{
+    position: relative;
+    top: 5px;
+}
+
+#monday, #wednesday, #friday, #sunday{
+    color: white;
+}
+#monday{
+    background-color: #824603;
+}
+#wednesday{
+    background-color: #df5277;
+}
+#friday{
+    background-color: #a2304e;
+}
+#sunday{
+    background-color: #c39005;
+}
+footer{
+    height: 80px;
+    text-align: center;
+    color: white;
+    background-color: #df5277;
+}
+footer ul {
+    list-style-type: none;
+    padding-bottom: 15px;
+    font-weight: bolder;
+}
+footer li{
+    position: relative;
+    display: inline-block;
+    margin-top: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    right: 2%;
+}
+footer li:first-child{
+    padding-left:150px;
+}
+footer ul li:first-child{
+    background-image: url(assets/images/mail.png);
+    background-repeat: no-repeat;
+    background-position-x: 120px;
+}
+footer ul li:nth-child(2){
+    background-image: url(assets/images/phone.png);
+    background-repeat: no-repeat;
+    background-position-x: 70px;
+}
+footer img{
+    padding-left: 20px;
+}
+/*Our Macarons page*/
+#our_macarons{
+    background-image: url(assets/images/our-macarons-background.png);
+    background-repeat: no-repeat;
+    background-position: -57px -77px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#our_macarons ul{
+    position: relative;
+    left: 45px;
+    padding-bottom: 55px;
+    line-height: normal;
+}
+#our_macarons p:last-child{
+    padding-bottom: 100px;
+}
+#gifts{
+    background-image: url(assets/images/gifts-parties-background.png);
+    background-repeat: no-repeat;
+    background-position: -50px 10px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#gifts ul{
+    position: relative;
+    left: 45px;
+}
+#gifts h2{
+    padding-bottom: 15px;
+}
+#gifts p{
+    padding-bottom: 20px;
+}
+#gifts p:last-of-type{
+    width: 58%;
+}
+#gifts ul:last-of-type{
+    padding-bottom: 100px;
+}
+span{
+    color: #df5277;
+}
+/*Contact page*/
+#contact ul{
+    list-style-type: none;
+    padding-bottom: 25px;
+}
+#contact ul, #contact p, #address{
+    width: 60%;
+}
+#contact{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 150px;
+}
+#contact p, #address{
+    padding-bottom: 15px;
+}
+#address p{
+    padding-bottom: 0;
+}
+#contact_text {
+    display: inline-block;
+    float: left;
+}
+form{
+    display: inline-block;
+    position: relative;
+    right: 150px;
+}
+form h2{
+    position: relative;
+    left: 10px;
+}
+#contact img{
+    position: absolute;
+    bottom: 250px;
+    right: 75px
+}
+form input, textarea{
+    width: 310px;
+    background-color: #f5f5f5;
+    height: 35px;
+    margin: 8px;
+}
+textarea{
+    height: 70px;
+}
+form input:last-child{
+    position: absolute;
+    width: 155px;
+    height: 35px;
+    right: 0;
+    border: none;
+}
+@media screen and (max-width: 627px){
+    .container{
+        width:100vw;
+        height:100vh;
+    }
+    #contact{
+        position: relative;
+        left:5%;
+    }
+    .welcome_img,main{
+        height: auto;
+        width: 100vw;
+    }
+    #contact, nav, footer, form{
+        width: 100%;
+    }
+    header{
+        background-size: 40%;
+        background-position: 40% 10%;
+
+    }
+    #contact img{
+        position: absolute;
+        display: none;
+    }
+    nav a{
+        font-size: 0.5em;
+    }
+    nav ul{
+        bottom: 50%;
+        right: 20%;
+    }
+    nav li{
+        margin: 2vw;
+    }
+    form{
+        left: 0;
+    }
+    form input, textarea{
+        width: 70vw;
+        padding: 0;
+    }
+    form input:last-child{
+        right: 15%;
+    }
+    footer ul, footer p{
+        font-size: 85%;
+    }
+    footer ul{
+        margin-top:0;
+        display: inline-block;
+        padding-bottom: 1%;
+    }
+    footer li:first-child{
+        padding-left: 7%;
+    }
+    footer ul li:first-child,footer ul li:nth-child(2) {
+        background-position-x: 0;
+    }
+
+    footer li{
+        padding-left: 6%;
+        padding-right: 10%;
+    }
+}
