@@ -16,7 +16,7 @@
         <p><span>order@mboutique.com</span></p>
         <p>Send your questions, comments and flavor suggestions or place an order!</p>
     </div>
-    <form action="" method="">
+    <form action="?page=contact" method="post">
         <h2>Contact Form</h2>
         <input type="text" name="name" placeholder=" Name"><br>
         <input type="text" name="email" placeholder=" Email"><br>
@@ -25,5 +25,5 @@
         <textarea name="message" placeholder=" Message"></textarea><br>
         <input type="submit" value="SEND">
     </form>
-    <img src="assets/images/macarons-image.png" ;
+    <img src="assets/images/macarons-image.png"
 </div>
