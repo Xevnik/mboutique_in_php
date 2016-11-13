@@ -5,14 +5,18 @@ $mboutiquePages = [
     'gift_parties'=>['nav'=>'GIFTS & PARTIES', 'url'=>'gifts_parties.php'],
     'contact'=>['nav'=>'CONTACT','url'=>'contact.php']
 ];
+
 $currentRequest = $_GET[page];
-if(array_key_exists($currentRequest, $mboutiquePages)){
+$contentLoc = 'pages/';
+if(empty($currentRequest)){
+    $contentLoc .= $mboutiquePages['home']['url'];
+}else if(array_key_exists($currentRequest, $mboutiquePages)){
 //    echo 'in array';
-    $contentLoc = $mboutiquePages[$currentRequest]['url'];
+    $contentLoc .= $mboutiquePages[$currentRequest]['url'];
 //    echo ($contentLoc);
 }else{
 //    echo 'in else';
-    $contentLoc = $mboutiquePages['home']['url'];
+    $contentLoc .= '404.php';
 }
 ?>
 <!doctype html>
